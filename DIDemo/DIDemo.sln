@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIDemo", "DIDemo\DIDemo.csproj", "{4F6A8141-209A-4BD5-9F8D-57EE668D78AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIDemoServices", "DIDemoServices\DIDemoServices.csproj", "{30FE4B6C-1EFD-4571-B9F3-3B6A43ABC7E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F6A8141-209A-4BD5-9F8D-57EE668D78AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F6A8141-209A-4BD5-9F8D-57EE668D78AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F6A8141-209A-4BD5-9F8D-57EE668D78AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F6A8141-209A-4BD5-9F8D-57EE668D78AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30FE4B6C-1EFD-4571-B9F3-3B6A43ABC7E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30FE4B6C-1EFD-4571-B9F3-3B6A43ABC7E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30FE4B6C-1EFD-4571-B9F3-3B6A43ABC7E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30FE4B6C-1EFD-4571-B9F3-3B6A43ABC7E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D4AD6ED-0804-448D-9E03-DB6BEC8E13A3}
+	EndGlobalSection
+EndGlobal

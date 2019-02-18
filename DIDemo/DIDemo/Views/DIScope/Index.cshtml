@@ -1,0 +1,42 @@
+﻿@using DIDemoServices.Interfaces
+@model DIScopedModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>DI Scopes</h1>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>DependencyOperationId</th>
+            <th>ServiceDependencyOperationId</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>transientOperation</td>
+            <td>@Model.TransientOperation.OperationId</td>
+            <td>@Model.OperationService.TransientOperation.OperationId</td>
+        </tr>
+        <tr>
+            <td>scopedOperation</td>
+            <td>@Model.ScopedOperation.OperationId</td>
+            <td>@Model.OperationService.ScopedOperation.OperationId</td>
+        </tr>
+        <tr>
+            <td>singletonOperation</td>
+            <td>@Model.SingletonOperation.OperationId</td>
+            <td>@Model.OperationService.SingletonOperation.OperationId</td>
+        </tr>
+        <tr>
+            <td>singletonInstanceOperation</td>
+            <td>@Model.SingletonInstanceOperation.OperationId</td>
+            <td>@Model.OperationService.SingletonInstanceOperation.OperationId</td>
+        </tr>
+    </tbody>
+</table>
+
