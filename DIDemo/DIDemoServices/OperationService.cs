@@ -2,7 +2,7 @@
 
 namespace DIDemoServices
 {
-    public class OperationService : IOperationService
+    public class OperationService : IOperationService, IOperationServiceSingleton
     {
         public OperationService(
             IOperationTransient transientOperation,

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIDemo", "DIDemo\DIDemo.csproj", "{4F6A8141-209A-4BD5-9F8D-57EE668D78AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIDemo", "DIDemo\DIDemo.csproj", "{4F6A8141-209A-4BD5-9F8D-57EE668D78AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIDemoServices", "DIDemoServices\DIDemoServices.csproj", "{30FE4B6C-1EFD-4571-B9F3-3B6A43ABC7E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIDemoServices", "DIDemoServices\DIDemoServices.csproj", "{30FE4B6C-1EFD-4571-B9F3-3B6A43ABC7E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

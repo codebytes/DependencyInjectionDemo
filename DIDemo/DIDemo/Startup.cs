@@ -33,6 +33,23 @@ namespace DIDemo
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            #region Options
+            services.Configure<MyOptions>(Configuration);
+            services.Configure<MyOptionsWithDelegateConfig>(myOptions =>
+            {
+                myOptions.Option1 = "value1_configured_by_delegate";
+                myOptions.Option2 = 500;
+            });
+            services.Configure<MySubOptions>(Configuration.GetSection("subsection"));
+            services.Configure<MyOptions>("named_options_1", Configuration);
+            services.Configure<MyOptions>("named_options_2", myOptions =>
+            {
+                myOptions.Option1 = "named_options_2_value1_from_action";
+            });
+            
+            services.AddTransient<IMyDependency, MyDependency>();
+            #endregion
+
             services.AddTransient<IOperationTransient, Operation>();
             services.AddScoped<IOperationScoped, Operation>();
             services.AddSingleton<IOperationSingleton, Operation>();
@@ -40,6 +57,7 @@ namespace DIDemo
 
             // OperationService depends on each of the other Operation types.
             services.AddTransient<IOperationService, OperationService>();
+            services.AddSingleton<IOperationServiceSingleton, OperationService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
