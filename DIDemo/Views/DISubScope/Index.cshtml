@@ -13,6 +13,8 @@
             <th>Type</th>
             <th>DependencyOperationId</th>
             <th>ServiceDependencyOperationId</th>
+            <th>Sub-scope DependencyOperationId</th>
+            <th>Sub-scope ServiceDependencyOperationId</th>
         </tr>
     </thead>
     <tbody>
@@ -20,41 +22,28 @@
             <td>transientOperation</td>
             <td>@Model.TransientOperation.OperationId</td>
             <td>@Model.OperationService.TransientOperation.OperationId</td>
-        </tr>
+           <td>@Model.DiSubScopedModel.TransientOperation.OperationId</td>
+            <td>@Model.DiSubScopedModel.OperationService.TransientOperation.OperationId</td>
+       </tr>
         <tr>
             <td>scopedOperation</td>
             <td>@Model.ScopedOperation.OperationId</td>
             <td>@Model.OperationService.ScopedOperation.OperationId</td>
-        </tr>
+          <td>@Model.DiSubScopedModel.ScopedOperation.OperationId</td>
+            <td>@Model.DiSubScopedModel.OperationService.ScopedOperation.OperationId</td>
+       </tr>
         <tr>
             <td>singletonOperation</td>
             <td>@Model.SingletonOperation.OperationId</td>
             <td>@Model.OperationService.SingletonOperation.OperationId</td>
-        </tr>
+           <td>@Model.DiSubScopedModel.SingletonOperation.OperationId</td>
+            <td>@Model.DiSubScopedModel.OperationService.SingletonOperation.OperationId</td>
+      </tr>
         <tr>
             <td>singletonInstanceOperation</td>
             <td>@Model.SingletonInstanceOperation.OperationId</td>
             <td>@Model.OperationService.SingletonInstanceOperation.OperationId</td>
-        </tr>
-
-        <tr>
-            <td>Sub transientOperation</td>
-            <td>@Model.DiSubScopedModel.TransientOperation.OperationId</td>
-            <td>@Model.DiSubScopedModel.OperationService.TransientOperation.OperationId</td>
-        </tr>
-        <tr>
-            <td>Sub scopedOperation</td>
-            <td>@Model.DiSubScopedModel.ScopedOperation.OperationId</td>
-            <td>@Model.DiSubScopedModel.OperationService.ScopedOperation.OperationId</td>
-        </tr>
-        <tr>
-            <td>Sub singletonOperation</td>
-            <td>@Model.DiSubScopedModel.SingletonOperation.OperationId</td>
-            <td>@Model.DiSubScopedModel.OperationService.SingletonOperation.OperationId</td>
-        </tr>
-        <tr>
-            <td>Sub singletonInstanceOperation</td>
-            <td>@Model.DiSubScopedModel.SingletonInstanceOperation.OperationId</td>
+         <td>@Model.DiSubScopedModel.SingletonInstanceOperation.OperationId</td>
             <td>@Model.DiSubScopedModel.OperationService.SingletonInstanceOperation.OperationId</td>
         </tr>
     </tbody>
