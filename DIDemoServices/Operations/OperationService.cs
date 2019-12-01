@@ -1,6 +1,6 @@
-﻿using DIDemoServices.Interfaces;
+﻿using DIDemoServices.Operations.Interfaces;
 
-namespace DIDemoServices
+namespace DIDemoServices.Operations
 {
     public class OperationService : IOperationService, IOperationServiceSingleton
     {

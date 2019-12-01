@@ -1,8 +1,7 @@
-﻿using System.Threading.Tasks;
-using DIDemoServices.Interfaces;
+﻿using DIDemoServices.Operations.Interfaces;
 using Microsoft.Extensions.Configuration;
 
-namespace DIDemoServices
+namespace DIDemoServices.Operations
 {
     public class MyDependency : IMyDependency
     {

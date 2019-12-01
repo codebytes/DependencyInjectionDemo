@@ -1,4 +1,4 @@
-﻿namespace DIDemoServices.Interfaces
+﻿namespace DIDemoServices.Operations.Interfaces
 {
     public interface IOperationService
     {

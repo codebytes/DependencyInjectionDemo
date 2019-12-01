@@ -1,4 +1,4 @@
-﻿using DIDemoServices.Interfaces;
+﻿using DIDemoServices.Operations.Interfaces;
 
 namespace DIDemo.Models
 {

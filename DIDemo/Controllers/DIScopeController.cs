@@ -1,5 +1,5 @@
 ﻿using DIDemo.Models;
-using DIDemoServices.Interfaces;
+using DIDemoServices.Operations.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DIDemo.Controllers

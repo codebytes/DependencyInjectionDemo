@@ -1,4 +1,4 @@
-﻿namespace DIDemoServices
+﻿namespace DIDemoServices.Operations
 {
     public class MyOptionsWithDelegateConfig
     {

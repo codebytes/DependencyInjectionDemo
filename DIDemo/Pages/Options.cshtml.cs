@@ -1,5 +1,6 @@
 ﻿using DIDemoServices;
-using DIDemoServices.Interfaces;
+using DIDemoServices.Operations;
+using DIDemoServices.Operations.Interfaces;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Options;
 

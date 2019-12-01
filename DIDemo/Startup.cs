@@ -1,6 +1,6 @@
 ﻿using System;
-using DIDemoServices;
-using DIDemoServices.Interfaces;
+using DIDemoServices.Operations;
+using DIDemoServices.Operations.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
