@@ -56,7 +56,6 @@ namespace DIDemo
             services.AddSingleton<IOperationServiceSingleton, OperationService>();
 
             services.AddMvc()
-                    .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
                     .AddNewtonsoftJson();
         }
 
